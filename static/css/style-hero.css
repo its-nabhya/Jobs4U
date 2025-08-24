@@ -4,11 +4,11 @@ body{
     background-color: #ffffff;
     font-family: Helvetica, sans-serif;
 }
-div.container{
+/* div.container{
     max-width: 80vw;
-    /* text-align: center; */
+    text-align: center;
     margin: 0 auto ;
-}
+} */
 .header{
     max-width: 90%;
     margin: auto;

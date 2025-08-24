@@ -1,0 +1,15 @@
+venv/
+.venv/
+
+# Bytecode files
+__pycache__/
+*.py[cod]
+
+# IDE files
+.vscode/
+.idea/
+
+# Test & build artifacts
+*.egg-info/
+dist/
+build/

@@ -3,12 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Home | Jobs4U</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style-hero.css')}}">
+
 </head>
 <body>
-    <div>Hello there!</div>
-    <div style="color:red;">First code up and running
-    <p>Hello, World!</p>
+    <div class="container">
+        <div class="header">
+            <h1 >Jobs4U</h1>
+            <img id="banner" src="{{ url_for('static', filename='images/home-banner2.avif') }}" alt="banner"  >
+        </div>
+        <div class="content-container">
+            <h2 class="content-heading"> About Us</h2>
+            <div class="content-body">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, illum perspiciatis tempora necessitatibus repudiandae est. Praesentium illo ipsa consectetur ad, nobis assumenda dicta corporis reiciendis non tempore! Veniam exercitationem possimus omnis. Debitis voluptatibus rem praesentium voluptatum voluptates sunt, ipsum velit quia hic possimus assumenda temporibus. Odit placeat veritatis nemo quod?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, illum perspiciatis tempora necessitatibus repudiandae est. Praesentium illo ipsa consectetur ad, nobis assumenda dicta corporis reiciendis non tempore! Veniam exercitationem possimus omnis. Debitis voluptatibus rem praesentium voluptatum voluptates sunt, ipsum velit quia hic possimus assumenda temporibus. Odit placeat veritatis nemo quod?</p>
+            </div>
+
+        </div>
+        <div class="apply-positions">
+            <h2>Open Positions</h2>
+            <div class="pos-post">
+                <span>
+                    <h3>Position 1</h3>
+                </span>
+                <button class="apply-button">Apply</button>
+                
+            </div>
+        </div>
+        <button class="contact-button">Contact Us</button>
     </div>
 </body>
 </html>

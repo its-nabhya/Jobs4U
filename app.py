@@ -6,9 +6,7 @@ app = Flask(__name__)
 @app.route("/") # Empty route- basically home page 
 # by doing this we ask flask to execute hello_world() when  url is domain/  i.e. our landing page
 def hello_world():
-    html="""<div style="color:red;">First code up and running
-    <p>Hello, World!</p>
-    </div>"""
+    
     return render_template('home.html')
 
 

@@ -12,7 +12,7 @@ Jobs =[
     'id': 'JB1',
     'title': 'ML Engineer',
     'location': 'Bengaluru',
-    'Salary' : 'Rs. 15LPA CTC '
+    'Salary' : 'Rs. 14LPA CTC '
 }, 
 {
     'id': 'JH2',

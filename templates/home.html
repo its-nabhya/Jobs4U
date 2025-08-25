@@ -16,18 +16,19 @@
     />
   </head>
   <body>
-    <div class="container">
-      <div class="header">
-        <h1>Jobs4U</h1>
-        <img
+    {% include 'nav.html' %}
+    <img
           id="banner"
           src="{{ url_for('static', filename='images/home-banner2.avif') }}"
           alt="banner"
         />
+    <div class="container">
+      <div class="header">
+        <h1>Jobs4U</h1>
+        
       </div>
-      <div class="content-container">
-        <h2 class="content-heading">About Us</h2>
-        <div class="content-body">
+      <div class="content-container row">
+        <div class="content-body col-md-6">
           <p class="lead">
             Jobs4U promises Lorem ipsum dolor sit amet consectetur adipisicing
             elit. Optio, labore. Praesentium fuga sunt quas perferendis quasi
@@ -42,16 +43,10 @@
             quia hic possimus assumenda temporibus. Odit placeat veritatis nemo
             quod?
           </p>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, illum
-            perspiciatis tempora necessitatibus repudiandae est. Praesentium
-            illo ipsa consectetur ad, nobis assumenda dicta corporis reiciendis
-            non tempore! Veniam exercitationem possimus omnis. Debitis
-            voluptatibus rem praesentium voluptatum voluptates sunt, ipsum velit
-            quia hic possimus assumenda temporibus. Odit placeat veritatis nemo
-            quod?
-          </p>
+        </div>
+        <div class="d-none d-md-block col-md-6">
+          <img src="{{ url_for('static',filename='images/people-working.avif') }}" alt="people" style="max-height:360px">
+        </div>
         </div>
         <figure class="text-center">
           <blockquote class="blockquote">
@@ -61,7 +56,7 @@
             Someone famous in <cite title="Source Title">Source Title</cite>
           </figcaption>
         </figure>
-      </div>
+      
       <div class="apply-positions">
         <h2>Job Openings</h2>
         {% for job in Jobs %}
@@ -69,10 +64,11 @@
         {% endfor %}
       </div>
       <div class="text-center">
-        <button type="button" class="contactus-button btn btn-primary btn-lg">
+        <a href="mailto:deptofwhatever@gmail.com?subject=Inquiry%2Fcontact%20from%20the%20website%20Jobs4U%20&body=*%20Describe%20your%20inquiry%2Fquestions%2Fdoubts%20here%20*%0D%0A%0D%0AAttach%20Screenshots%20or%20documents%20(if%20any)" type="button" class="contactus-button btn btn-primary btn-lg">
           Contact Us
-        </button>
+        </a>
       </div>
     </div>
+    {%  include 'footer.html' %}
   </body>
 </html>
